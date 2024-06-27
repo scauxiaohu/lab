@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lab.mapper.LabMapper">
+
+    <resultMap id="BaseResultMap" type="com.lab.domain.Lab">
+            <id property="lab_id" column="lab_id" jdbcType="INTEGER"/>
+            <result property="lab_number" column="lab_number" jdbcType="VARCHAR"/>
+            <result property="lab_name" column="lab_name" jdbcType="VARCHAR"/>
+            <result property="lab_type" column="lab_type" jdbcType="INTEGER"/>
+            <result property="equipment_count" column="equipment_count" jdbcType="INTEGER"/>
+            <result property="lab_manager_id" column="lab_manager_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        lab_id,lab_number,lab_name,
+        lab_type,equipment_count,lab_manager_id
+    </sql>
+</mapper>

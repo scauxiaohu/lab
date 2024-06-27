@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lab.mapper.EquipmentRepairMapper">
+
+    <resultMap id="BaseResultMap" type="com.lab.domain.EquipmentRepair">
+            <id property="er_id" column="er_id" jdbcType="INTEGER"/>
+            <result property="teacher_id" column="teacher_id" jdbcType="INTEGER"/>
+            <result property="lab_id" column="lab_id" jdbcType="INTEGER"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="repair_status" column="repair_status" jdbcType="INTEGER"/>
+            <result property="repair_date" column="repair_date" jdbcType="DATE"/>
+            <result property="repair_description" column="repair_description" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        er_id,teacher_id,lab_id,
+        description,repair_status,repair_date,
+        repair_description
+    </sql>
+</mapper>

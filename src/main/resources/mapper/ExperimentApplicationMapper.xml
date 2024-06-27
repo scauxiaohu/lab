@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lab.mapper.ExperimentApplicationMapper">
+
+    <resultMap id="BaseResultMap" type="com.lab.domain.ExperimentApplication">
+            <id property="ea_id" column="ea_id" jdbcType="INTEGER"/>
+            <result property="year_semester_id" column="year_semester_id" jdbcType="INTEGER"/>
+            <result property="teacher_id" column="teacher_id" jdbcType="INTEGER"/>
+            <result property="course_id" column="course_id" jdbcType="INTEGER"/>
+            <result property="lab_type_required" column="lab_type_required" jdbcType="INTEGER"/>
+            <result property="class_id" column="class_id" jdbcType="INTEGER"/>
+            <result property="start_week" column="start_week" jdbcType="INTEGER"/>
+            <result property="continue_week" column="continue_week" jdbcType="INTEGER"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="weekday" column="weekday" jdbcType="INTEGER"/>
+            <result property="slot" column="slot" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ea_id,year_semester_id,teacher_id,
+        course_id,lab_type_required,class_id,
+        start_week,continue_week,status,
+        weekday,slot
+    </sql>
+</mapper>

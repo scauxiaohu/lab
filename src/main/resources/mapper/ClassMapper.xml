@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lab.mapper.ClassMapper">
+
+    <resultMap id="BaseResultMap" type="com.lab.domain.Class">
+            <id property="class_id" column="class_id" jdbcType="INTEGER"/>
+            <result property="class_name" column="class_name" jdbcType="VARCHAR"/>
+            <result property="class_number" column="class_number" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        class_id,class_name,class_number
+    </sql>
+</mapper>
